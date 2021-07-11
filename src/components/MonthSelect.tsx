@@ -7,7 +7,7 @@ import {
   useHistory,
   useParams
 } from 'react-router-dom';
-import Calender from './Calender';
+import AddAppointment from './AddAppointment';
 
 function MonthSelect() {
   const { path, url } = useRouteMatch();
@@ -49,7 +49,7 @@ function MonthSelect() {
         </Form.Group>
         <Switch>
           <Route path={`${path}/:month`}>
-            <Calender />
+            <AddAppointment />
           </Route>
         </Switch>
     </>
